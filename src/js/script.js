@@ -27,3 +27,17 @@ function iniciar() {
 
     }
 }
+
+function momentoAcao() {
+    let valor_sessoes = localStorage.getItem('sessoes')
+
+    if(valor_sessoes != '1'){
+        document.getElementById('title_sessao').innerHTML = valor_sessoes + ' sessões restantes'
+    }else {
+        document.getElementById('title_sessao').innerHTML = valor_sessoes + 'sessão restante'
+    }
+}
+
+function momentoPausa() {
+
+}
