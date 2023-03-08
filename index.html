@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
@@ -25,45 +24,34 @@
                     <div class="col">
 
                         <div class="row d-flex justify-content-center">
-
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
-                                        for="acao">AÇÃO</label>
-                                    <input type="number"
-                                        class="form-control form-control-lg bg-dark border-0 shadow text-white"
-                                        id="acao">
-                                        <small class="text-danger" id='erro_acao'></small>
+                                    <label class="d-flex justify-content-center text-white font-weight-bold" for="acao">AÇÃO</label>
+                                    <input type="number" class="form-control form-control-lg bg-dark border-0 shadow text-white" id="acao">
+                                    <small class="text-danger" id='erro_acao'></small>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
-                                        for="pausa">PAUSA</label>
-                                    <input type="number"
-                                        class="form-control  form-control-lg bg-dark border-0 shadow text-white"
-                                        id="pausa">
-                                        <small class="text-danger" id='erro_pausa'></small>
+                                    <label class="d-flex justify-content-center text-white font-weight-bold" for="pausa">PAUSA</label>
+                                    <input type="number" class="form-control  form-control-lg bg-dark border-0 shadow text-white" id="pausa">
+                                    <small class="text-danger" id='erro_pausa'></small>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
-                                        for="sessoes">SESSÃO</label>
-                                    <input type="number"
-                                        class="form-control  form-control-lg bg-dark border-0 shadow text-white"
-                                        id="sessoes">
-                                        <small class="text-danger" id='erro_sessoes'></small>
+                                    <label class="d-flex justify-content-center text-white font-weight-bold" for="sessoes">SESSÃO</label>
+                                    <input type="number" class="form-control  form-control-lg bg-dark border-0 shadow text-white" id="sessoes">
+                                    <small class="text-danger" id='erro_sessoes'></small>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mt-5 mb-5 d-flex justify-content-center">
                             <div class="col-md-9">
-                                <button onclick="iniciar"
-                                    class="btn btn-success shadow btn-lg btn-block">Iniciar</button>
+                                <button onclick="iniciar()" class="btn btn-success shadow btn-lg btn-block">Iniciar</button>
                             </div>
                         </div>
                     </div>
@@ -82,11 +70,9 @@
                 <div class="col-5 p-0">
                     <h2 id="minutes_ok"></h2>
                 </div>
-
                 <div class="col-1 p-0 d-flex justify-content-center">
                     <h2>:</h2>
                 </div>
-
                 <div class="col-5 pl-0">
                     <h2 id="seconds_ok"></h2>
                 </div>
