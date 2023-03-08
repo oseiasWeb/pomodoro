@@ -30,3 +30,7 @@ input[type="number"] {
     display: flex;
     border-radius: 50%;
 }
+
+h2 {
+    font-size: 3rem;
+}
