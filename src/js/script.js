@@ -44,6 +44,9 @@ function momentoAcao() {
     title.style.setProperty('color', '#15BE5D', 'impotant')
 
     min = Number(localStorage.getItem('acao'))
+
+    min = min - 1
+    segundos = 59 
 }
 
 function momentoPausa() {
