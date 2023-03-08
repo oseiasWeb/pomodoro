@@ -17,6 +17,10 @@ function iniciar() {
         document.getElementById('erro_sessoes').innerHTML= "Informe as sessões"
         acao.focus()
     } else {
+        localStorage.setItem('acao', String(acao.value))
+        localStorage.setItem('pausa', String(pausa.value))
+        localStorage.setItem('sessoes', String(sessoes.value))
+
         
     }
 }
