@@ -68,14 +68,52 @@ function momentoAcao() {
                 clearInterval(min_interval)
                 clearInterval(seg_interval)
 
-                volta.play()
+                final.play()
 
                 momentoPausa()
             }
+            segundos = 60
         }
     }
 }
 
 function momentoPausa() {
+    let title = document.getElementById('title')
+    title.innerHTML = "PAUSA"
+    title.style.fontSize = '30px'
+    title.style.fontWeight = 'bold'
+    title.style.setProperty('color', '#F77260', 'impotant')
+
+    min_pausa = Number(localStorage.getItem('pausa'))
+
+    min_pausa = min_pausa - 1
+    segundos = 59
+
+    document.getElementById('minutes_ok').innerHTML = min_pausa
+    document.getElementById('segunds_ok').innerHTML = segundos
+
+    var min_interval = setInterval(minTimer, 60000)
+    var seg_interval = setInterval(segTimer, 1000)
+
+    function minTimer(){
+        min_pausa = min_pausa - 1
+        document.getElementById('minutes_ok').innerHTML = min_pausa
+    }
+
+    function segTimer(){
+        segundos = segundos - 1 
+        document.getElementById('segunds_ok').innerHTML = segundos
+
+        if(segundos <= 0){
+            if(min_pausa <= 0){
+                clearInterval(min_interval)
+                clearInterval(seg_interval)
+
+                volta.play()
+
+            }
+            segundos = 60
+        } 
+    }
 
 }
