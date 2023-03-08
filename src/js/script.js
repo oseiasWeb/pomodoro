@@ -36,6 +36,14 @@ function momentoAcao() {
     }else {
         document.getElementById('title_sessao').innerHTML = valor_sessoes + 'sessão restante'
     }
+
+    let title = document.getElementById('title')
+    title.innerHTML = "AÇÃO"
+    title.style.fontSize = '30px'
+    title.style.fontWeight = 'bold'
+    title.style.setProperty('color', '#15BE5D', 'impotant')
+
+    min = Number(localStorage.getItem('acao'))
 }
 
 function momentoPausa() {
