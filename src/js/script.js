@@ -3,11 +3,8 @@ let pausa = document.getElementById('pausa')
 let sessoes = document.getElementById('sessoes')
 let segundos
 
-var retorno = new Audio("./src/audio/retorno.mp3")
-var fim = new Audio("./src/audio/fim.mp3")
-
-document.getElementById('timer').style.setProperty('display','block','important') 
-
+var volta = new Audio("./src/audio/volta.mp3")
+var final = new Audio("./src/audio/final.mp3")
 
 function iniciar() {
     if(acao.value == 0){
@@ -20,10 +17,14 @@ function iniciar() {
         document.getElementById('erro_sessoes').innerHTML= "Informe as sessões"
         acao.focus()
     } else {
+
+        
+
         localStorage.setItem('acao', String(acao.value))
         localStorage.setItem('pausa', String(pausa.value))
         localStorage.setItem('sessoes', String(sessoes.value))
 
+        document.getElementById('config').style.setProperty('display','none','important') 
         document.getElementById('timer').style.setProperty('display','block','important') 
     }
 }

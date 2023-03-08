@@ -34,3 +34,7 @@ input[type="number"] {
 h2 {
     font-size: 3rem;
 }
+
+#timer {
+    display: none !important;
+}
