@@ -19,3 +19,14 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: none;
 }
+
+.time {
+    color: #fff;
+    width: 18rem;
+    height: 18rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
