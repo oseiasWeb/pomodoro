@@ -7,9 +7,11 @@ input {
     width: 150px !important;
     height: 150px !important;
     text-align: center !important;
+    font-size: 2.5rem !important;
 }
 
-label {
-    font-size: 2rem !important;
-    background-color: aqua;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
