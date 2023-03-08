@@ -6,6 +6,9 @@ let segundos
 var retorno = new Audio("./src/audio/retorno.mp3")
 var fim = new Audio("./src/audio/fim.mp3")
 
+document.getElementById('timer').style.setProperty('display','block','important') 
+
+
 function iniciar() {
     if(acao.value == 0){
         document.getElementById('erro_acao').innerHTML= "Informe os minutos"
@@ -21,6 +24,6 @@ function iniciar() {
         localStorage.setItem('pausa', String(pausa.value))
         localStorage.setItem('sessoes', String(sessoes.value))
 
-        
+        document.getElementById('timer').style.setProperty('display','block','important') 
     }
 }
