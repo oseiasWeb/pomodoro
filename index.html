@@ -35,6 +35,7 @@
                                     <input type="number"
                                         class="form-control form-control-lg bg-dark border-0 shadow text-white"
                                         id="acao">
+                                        <small class="text-danger" id='erro_acao'></small>
                                 </div>
                             </div>
 
@@ -45,23 +46,26 @@
                                     <input type="number"
                                         class="form-control  form-control-lg bg-dark border-0 shadow text-white"
                                         id="pausa">
+                                        <small class="text-danger" id='erro_pausa'></small>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label class="d-flex justify-content-center text-white font-weight-bold"
-                                        for="sessoes">SESSÕES</label>
+                                        for="sessoes">SESSÃO</label>
                                     <input type="number"
                                         class="form-control  form-control-lg bg-dark border-0 shadow text-white"
                                         id="sessoes">
+                                        <small class="text-danger" id='erro_sessoes'></small>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mt-5 mb-5 d-flex justify-content-center">
                             <div class="col-md-9">
-                                <button onclick="iniciar" class="btn btn-success shadow btn-lg btn-block">Iniciar</button>
+                                <button onclick="iniciar"
+                                    class="btn btn-success shadow btn-lg btn-block">Iniciar</button>
                             </div>
                         </div>
                     </div>
