@@ -50,6 +50,9 @@ function momentoAcao() {
     
     document.getElementById('minutes_ok').innerHTML = min
     document.getElementById('segunds_ok').innerHTML = segundos
+
+    var min_interval = setInterval(minTimer, 60000)
+    var seg_interval = setInterval(segTimer, 1000)
 }
 
 function momentoPausa() {
