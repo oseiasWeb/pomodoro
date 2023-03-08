@@ -46,7 +46,10 @@ function momentoAcao() {
     min = Number(localStorage.getItem('acao'))
 
     min = min - 1
-    segundos = 59 
+    segundos = 59
+    
+    document.getElementById('minutes_ok').innerHTML = min
+    document.getElementById('segunds_ok').innerHTML = segundos
 }
 
 function momentoPausa() {
