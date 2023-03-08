@@ -106,8 +106,19 @@ function momentoPausa() {
 
         if(segundos <= 0){
             if(min_pausa <= 0){
+                sessao = Number(localStorage.getItem('sessoes'))
+                sessao = sessao - 1
+                localStorage.setItem('sessoes', String(sessao))
+
                 clearInterval(min_interval)
                 clearInterval(seg_interval)
+                if(sessao <= 0){
+                    final.play()
+                    localStorage.clear()
+                    document.getElementById('config').style.setProperty('display','none','import')
+                    document.getElementById('timer').style.setProperty('display','block','import')
+                    document.getElementById('fim').style.setProperty('display','block','import')
+                }
 
                 volta.play()
 
