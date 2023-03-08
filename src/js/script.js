@@ -53,6 +53,27 @@ function momentoAcao() {
 
     var min_interval = setInterval(minTimer, 60000)
     var seg_interval = setInterval(segTimer, 1000)
+
+    function minTimer(){
+        min = min - 1
+        document.getElementById('minutes_ok').innerHTML = min
+    }
+
+    function segTimer(){
+        segundos = segundos - 1 
+        document.getElementById('segunds_ok').innerHTML = segundos
+
+        if(segundos <= 0){
+            if(min <= 0){
+                clearInterval(min_interval)
+                clearInterval(seg_interval)
+
+                volta.play()
+
+                momentoPausa()
+            }
+        }
+    }
 }
 
 function momentoPausa() {
