@@ -15,16 +15,14 @@ function iniciar() {
         acao.focus()
     } else if (sessoes.value == 0) {
         document.getElementById('erro_sessoes').innerHTML= "Informe as sessões"
-        acao.focus()
+        sessoes.focus()
     } else {
-
-        
 
         localStorage.setItem('acao', String(acao.value))
         localStorage.setItem('pausa', String(pausa.value))
         localStorage.setItem('sessoes', String(sessoes.value))
 
-        document.getElementById('config').style.setProperty('display','none','important') 
-        document.getElementById('timer').style.setProperty('display','block','important') 
+        document.getElementById('timer').style.setProperty('display','block','important')
+
     }
 }
