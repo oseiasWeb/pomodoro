@@ -11,3 +11,15 @@
         <img align="center" alt="Bootstrap" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
     </ul>
 </div><br>
+
+<h2 align="center">🤔 Como utilizar?</h2>
+<p>A técnica Pomodoro é um método de gestão de tempo que pode ser aplicado para diversas tarefas. Podemos dividir a aplicação por minutos de Ação, Pausa e quantas Sessões:</p><br>
+
+<p align="center">
+<img align="center" alt="Imagem de como utilizar" title="Usar 01" src="./src/images/como-usar-01.png" ></p>
+
+<p align="center">
+<img align="center" alt="Imagem de como utilizar" title="Usar 01" height="200" whidth="200" src="./src/images/como-usar-02.png" ></p>
+
+<p align="center">
+<img align="center" alt="Imagem de como utilizar" title="Usar 01" height="200" whidth="200" src="./src/images/como-usar-03.png" ></p>
