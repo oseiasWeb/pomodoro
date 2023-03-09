@@ -25,6 +25,7 @@ function iniciar() {
         document.getElementById('config').style.setProperty('display','none','important')
         document.getElementById('timer').style.setProperty('display','block','important')
 
+        momentoAcao()
     }
 }
 
@@ -34,14 +35,14 @@ function momentoAcao() {
     if(valor_sessoes != '1'){
         document.getElementById('title_sessao').innerHTML = valor_sessoes + ' sessões restantes'
     }else {
-        document.getElementById('title_sessao').innerHTML = valor_sessoes + 'sessão restante'
+        document.getElementById('title_sessao').innerHTML = valor_sessoes + ' sessão restante'
     }
 
     let title = document.getElementById('title')
     title.innerHTML = "AÇÃO"
     title.style.fontSize = '30px'
     title.style.fontWeight = 'bold'
-    title.style.setProperty('color', '#15BE5D', 'impotant')
+    title.style.setProperty('color', '#15BE5D', 'important')
 
     min = Number(localStorage.getItem('acao'))
 
@@ -49,7 +50,7 @@ function momentoAcao() {
     segundos = 59
     
     document.getElementById('minutes_ok').innerHTML = min
-    document.getElementById('segunds_ok').innerHTML = segundos
+    document.getElementById('seconds_ok').innerHTML = segundos
 
     var min_interval = setInterval(minTimer, 60000)
     var seg_interval = setInterval(segTimer, 1000)
@@ -61,14 +62,14 @@ function momentoAcao() {
 
     function segTimer(){
         segundos = segundos - 1 
-        document.getElementById('segunds_ok').innerHTML = segundos
+        document.getElementById('seconds_ok').innerHTML = segundos
 
         if(segundos <= 0){
             if(min <= 0){
                 clearInterval(min_interval)
                 clearInterval(seg_interval)
 
-                final.play()
+                final.play();
 
                 momentoPausa()
             }
@@ -82,7 +83,7 @@ function momentoPausa() {
     title.innerHTML = "PAUSA"
     title.style.fontSize = '30px'
     title.style.fontWeight = 'bold'
-    title.style.setProperty('color', '#F77260', 'impotant')
+    title.style.setProperty('color', '#F77260', 'important')
 
     min_pausa = Number(localStorage.getItem('pausa'))
 
@@ -90,7 +91,7 @@ function momentoPausa() {
     segundos = 59
 
     document.getElementById('minutes_ok').innerHTML = min_pausa
-    document.getElementById('segunds_ok').innerHTML = segundos
+    document.getElementById('seconds_ok').innerHTML = segundos
 
     var min_interval = setInterval(minTimer, 60000)
     var seg_interval = setInterval(segTimer, 1000)
@@ -102,7 +103,7 @@ function momentoPausa() {
 
     function segTimer(){
         segundos = segundos - 1 
-        document.getElementById('segunds_ok').innerHTML = segundos
+        document.getElementById('seconds_ok').innerHTML = segundos
 
         if(segundos <= 0){
             if(min_pausa <= 0){
@@ -115,13 +116,14 @@ function momentoPausa() {
                 if(sessao <= 0){
                     final.play()
                     localStorage.clear()
-                    document.getElementById('config').style.setProperty('display','none','import')
-                    document.getElementById('timer').style.setProperty('display','block','import')
-                    document.getElementById('fim').style.setProperty('display','block','import')
+                    document.getElementById('config').style.setProperty('display','none','important')
+                    document.getElementById('timer').style.setProperty('display','block','important')
+                    document.getElementById('fim').style.setProperty('display','block','important')
+                } else {
+                 
+                    volta.play();
+                    momentoAcao()
                 }
-
-                volta.play()
-
             }
             segundos = 60
         } 

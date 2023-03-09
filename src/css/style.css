@@ -22,6 +22,7 @@ input[type="number"] {
 
 .time {
     color: #fff;
+    margin: auto !important;
     width: 18rem;
     height: 18rem;
     text-align: center;
