@@ -1,5 +1,8 @@
 <h1 align="center">Desafio Jera - Pomodoro 🍎</h1>
 
+<p align="center">
+<img align="center" alt="Imagem de como utilizar" title="Usar 01" src="./src/images/capa.png" ></p>
+
 <p>Desafio proposto pela Jera Academy. Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro.</p>
 
 <div align="center" valign="top"><br>
