@@ -22,8 +22,13 @@
 <img align="center" alt="Imagem de como utilizar" title="Usar 01" height="200" whidth="200" src="./src/images/como-usar-02.png" ></p>
 
 <p align="center">
-<img align="center" alt="Imagem de como utilizar" title="Usar 01" height="200" whidth="200" src="./src/images/como-usar-03.png" ></p>
+<img align="center" alt="Imagem de como utilizar" title="Usar 01" height="200" whidth="200" src="./src/images/como-usar-03.png" ></p><br>
 
 <h2 align="center">🔗 Link da página</h2>
 <p>Logo abaixo temos o link da página para visualização e testes:</p>
 👉 <a href="https://oseiasweb.github.io/jera-pomodoro/">Desafio Jera - Pomodoro</a><br><br>
+
+<h2 align="center">🏆 Status Projeto</h2>
+<p align="center">
+ <img src="./src/images/finalizado.webp"/>
+</p>
