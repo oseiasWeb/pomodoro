@@ -5,6 +5,8 @@
 
 <p>Desafio proposto pela Jera Academy. Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro.</p>
 
+<a href="https://www.wikiwand.com/pt/Técnica_pomodoro">Saiba mais sobre o Pomodoro</a><br><br>
+
 <div align="center" valign="top"><br>
  <h2>🕹️ Tecnologias Utilizadas</h2>
     <ul align="center">
