@@ -33,9 +33,15 @@ input[type="number"] {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #timer {
     display: none !important;
 }
+
+/* .col-md-3 .form-group {
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+} */
