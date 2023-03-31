@@ -1,4 +1,4 @@
-<h1 align="center">Método Pomodoro 🍎</h1>
+<h1 align="center">Método Pomodoro</h1>
 
 <p align="center">
 <img align="center" alt="Imagem de como utilizar" title="Usar 01" src="./src/images/capa.png" ></p>
@@ -31,7 +31,7 @@
 
 <h2 align="center">🔗 Link da página</h2>
 <p>Logo abaixo temos o link da página para visualização e testes:</p>
-👉 <a href="https://oseiasweb.github.io/jera-pomodoro/">Desafio Jera - Pomodoro</a><br><br>
+👉 <a href="https://oseiasweb.github.io/jera-pomodoro/">Método Pomodoro</a><br><br>
 
 <h2 align="center">🏆 Status Projeto</h2>
 <p align="center">
