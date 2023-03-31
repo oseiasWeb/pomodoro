@@ -1,9 +1,9 @@
-<h1 align="center">Desafio Jera - Pomodoro 🍎</h1>
+<h1 align="center">Método Pomodoro 🍎</h1>
 
 <p align="center">
 <img align="center" alt="Imagem de como utilizar" title="Usar 01" src="./src/images/capa.png" ></p>
 
-<p>Desafio proposto pela Jera Academy. Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro.</p>
+<p>A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980. Ela consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.</p>
 
 <a href="https://www.wikiwand.com/pt/Técnica_pomodoro">Saiba mais sobre o Pomodoro</a><br><br>
 
